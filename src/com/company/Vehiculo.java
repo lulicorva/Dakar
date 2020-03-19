@@ -65,4 +65,8 @@ public class Vehiculo {
         return ruedas;
     }
 
+    public Integer ecuacion() {
+        return (velocidad *(aceleracion / 2)) / (anguloDeGiro *(peso-ruedas*100));
+    }
+
 }

@@ -86,6 +86,17 @@ public class Carrera {
         listaDeVehiculos.remove(unVehiculo);
         System.out.println("Se elimino el vehiculo con patente numero: "+ unVehiculo.patente + " de la carrera.");
     }
-    
 
+    public void ganadorDeLaCarrera(){
+        Vehiculo vehiculoGanador = null;
+        Integer ganador = 0;
+        for (Vehiculo vehiculo:listaDeVehiculos) {
+            if (vehiculo.ecuacion() > ganador){
+                ganador = vehiculo.ecuacion();
+                vehiculoGanador=vehiculo;
+            }
+        }
+    }
+
+    
 }
