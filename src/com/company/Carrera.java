@@ -71,5 +71,21 @@ public class Carrera {
             listaDeVehiculos.add(unaMoto);
         }
     }
+
+    public void eliminarVehiculo(Vehiculo vehiculo){
+        listaDeVehiculos.remove(vehiculo);
+    }
+
+    public void eliminarVehiculoConPatente(String unaPatente){
+        Vehiculo unVehiculo = null;
+        for (Vehiculo vehiculo:listaDeVehiculos){
+            if (unaPatente.equals(vehiculo.patente)){
+                unVehiculo = vehiculo;
+            }
+        }
+        listaDeVehiculos.remove(unVehiculo);
+        System.out.println("Se elimino el vehiculo con patente numero: "+ unVehiculo.patente + " de la carrera.");
+    }
     
+
 }

@@ -1,12 +1,12 @@
 package com.company;
 
 public class Vehiculo {
-    private Integer velocidad;
-    private Integer aceleracion;
-    private Integer anguloDeGiro;
-    private String patente;
-    private Integer peso;
-    private Integer ruedas;
+    protected Integer velocidad;
+    protected Integer aceleracion;
+    protected Integer anguloDeGiro;
+    protected String patente;
+    protected Integer peso;
+    protected Integer ruedas;
 
     public Vehiculo (Integer velocidad, Integer aceleracion, Integer anguloDeGiro, String patente, Integer peso, Integer ruedas){
         this.aceleracion=aceleracion;
