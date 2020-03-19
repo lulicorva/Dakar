@@ -64,4 +64,5 @@ public class Vehiculo {
     public Integer getRuedas() {
         return ruedas;
     }
+
 }
