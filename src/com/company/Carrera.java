@@ -98,5 +98,16 @@ public class Carrera {
         }
     }
 
-    
+    public void socorrerAuto (String patente){
+    }
+
+    public void socorrerMoto (String patente){
+    }
+
+    @Override
+    public String toString() {
+        return "Carrera{" +
+                "listaDeVehiculos=" + listaDeVehiculos +
+                '}';
+    }
 }

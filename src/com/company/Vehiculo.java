@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Vehiculo {
     protected Integer velocidad;
     protected Integer aceleracion;
@@ -69,4 +71,16 @@ public class Vehiculo {
         return (velocidad *(aceleracion / 2)) / (anguloDeGiro *(peso-ruedas*100));
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehiculo vehiculo = (Vehiculo) o;
+        return patente.equals(vehiculo.patente);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(patente);
+    }
 }
