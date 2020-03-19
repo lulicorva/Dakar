@@ -3,12 +3,12 @@ package com.company;
 public class Vehiculo {
     private Integer velocidad;
     private Integer aceleracion;
-    private Double anguloDeGiro;
+    private Integer anguloDeGiro;
     private String patente;
-    private Double peso;
+    private Integer peso;
     private Integer ruedas;
 
-    public Vehiculo (Integer velocidad, Integer aceleracion, Double anguloDeGiro, String patente, Double peso, Integer ruedas){
+    public Vehiculo (Integer velocidad, Integer aceleracion, Integer anguloDeGiro, String patente, Integer peso, Integer ruedas){
         this.aceleracion=aceleracion;
         this.anguloDeGiro=anguloDeGiro;
         this.patente=patente;
@@ -25,7 +25,7 @@ public class Vehiculo {
         this.aceleracion = aceleracion;
     }
 
-    public void setAnguloDeGiro(Double anguloDeGiro) {
+    public void setAnguloDeGiro(Integer anguloDeGiro) {
         this.anguloDeGiro = anguloDeGiro;
     }
 
@@ -33,7 +33,7 @@ public class Vehiculo {
         this.patente = patente;
     }
 
-    public void setPeso(Double peso) {
+    public void setPeso(Integer peso) {
         this.peso = peso;
     }
 
@@ -49,7 +49,7 @@ public class Vehiculo {
         return aceleracion;
     }
 
-    public Double getAnguloDeGiro() {
+    public Integer getAnguloDeGiro() {
         return anguloDeGiro;
     }
 
@@ -57,7 +57,7 @@ public class Vehiculo {
         return patente;
     }
 
-    public Double getPeso() {
+    public Integer getPeso() {
         return peso;
     }
 
