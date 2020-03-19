@@ -57,4 +57,19 @@ public class Carrera {
     public List<Vehiculo> getListaDeVehiculos() {
         return listaDeVehiculos;
     }
+
+    public void darDeAltaAuto(Integer velocidad, Integer aceleracion, Integer anguloDeGiro, String patente){
+        Vehiculo unAuto = new Autos(velocidad,aceleracion,anguloDeGiro,patente);
+        if (cantidadDeVehiculosPermitidos>listaDeVehiculos.size()){
+            listaDeVehiculos.add(unAuto);
+        }
+    }
+
+    public void darDeAltaMoto(Integer velocidad, Integer aceleracion, Integer anguloDeGiro, String patente){
+        Motos unaMoto = new Motos(velocidad,aceleracion,anguloDeGiro,patente);
+        if (cantidadDeVehiculosPermitidos>listaDeVehiculos.size()){
+            listaDeVehiculos.add(unaMoto);
+        }
+    }
+    
 }
